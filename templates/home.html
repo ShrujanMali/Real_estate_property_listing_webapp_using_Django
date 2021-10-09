@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">PropertyFY</h1>
+    <p class="lead">A PropertyFY website you can find real estate properties like Office, Shops and much more. Just click below.</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{% url 'blog_list' %}" role="button">View All Properties</a>
+    </p>
+</div>
+{% endblock content %}

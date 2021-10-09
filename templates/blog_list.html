@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Blogs{% endblock title %}
+
+{% block content %}
+<container>
+    <form action="{% url 'search_results' %}" method="get">
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="q" class="sr-only">Search</label>
+        <br>
+        <input style="padding: 20px" name='q' type="text" class="form-control" id="q" placeholder="Search bar e.g. City, Property type, amenities">
+        <br>
+      </div>
+
+    </form>
+</container>
+
+    {% for blog in object_list %}
+        <div class="card">
+            <div class="card-header">
+                <span class="font-weight-bold"><a href="{% url 'blog_detail' blog.pk %}">{{ blog.title }}</a></span> &middot;
+                <span class="text-muted">by {{ blog.author }} | {{ blog.date }}</span>
+            </div>
+            <div class="card-body">
+                <p>Property type: {{ blog.property_type }} </p>
+                <p style="white-space:pre-wrap"> {{ blog.description|truncatewords:2  }} </p>
+            </div>
+            <div class="card-footer text-center text-muted">
+                
+            </div>
+        </div>
+        <br />
+    {% endfor %}
+{% endblock content %}

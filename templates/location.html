@@ -1,0 +1,68 @@
+{% extends "base.html" %}  
+{% block content %} 
+<style> 
+
+    #map { 
+        height: 550px; 
+        width: 100%; 
+    } 
+
+    .mapboxgl-marker { 
+        cursor: pointer; 
+    } 
+
+    .locator-popup { 
+        font-size: 14px; 
+    } 
+</style> 
+<h1>Property Locations</h1> 
+<h6>Click a location to see more details</h6> 
+<div id='map' class='map'></div> 
+  
+<!-- load TomTom Maps Web SDK from CDN --> 
+<link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.13.0/maps/maps.css'/> 
+<script src='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.13.0/maps/maps-web.min.js'></script> 
+  
+<script> 
+     tt.setProductInfo('TomTom Maps Django Demo', '1.0'); 
+    let map = tt.map({ 
+        key: 'a6rRgUqKXNY9G5djDUGX4GMOWBr3G6BM', 
+        container: 'map' 
+    }); 
+
+    let bounds = [] 
+    let propertyLocations = JSON.parse("{{ locations|escapejs }}"); 
+
+    for (let bloglocations of propertyLocations) { 
+        let coordinates = [bloglocations.longitude, bloglocations.latitude]; 
+         bounds.push(coordinates); 
+
+        let popup = new tt.Popup().setHTML(` 
+            <div class="locator-popup"> 
+                <h6>Property Title</h6>
+                <p>${bloglocations.title}</p> 
+                <h6>Address</h6> 
+                <p>${bloglocations.address}</p> 
+                <h6>Property type</h6> 
+                <p>${bloglocations.property_type}</p> 
+
+                 
+            </div> 
+        `); 
+
+        let marker = new tt.Marker() 
+            .setLngLat(coordinates) 
+            .setPopup(popup) 
+            .addTo(map); 
+    } 
+
+    // zoom the map to fit all markers 
+     map.on('load', () => { 
+         map.fitBounds(bounds, { 
+            padding: { top: 50, bottom:50, left: 50, right: 50 } 
+        }); 
+    }) 
+</script> 
+
+
+{% endblock %}

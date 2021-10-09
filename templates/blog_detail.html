@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="blog-entry">
+    <h2>{{ object.title }}</h2>
+    <hr>
+    <p>Posted by: {{ object.author }} | {{ object.date }}</object></p>
+    <p><b>Owner name/ Builder:</b> {{ object.owner }}  
+        <br>
+       <b>Email Address:</b> {{ object.email_address}}
+       <br>
+       <b>It's a:</b> {{ object.property_type }}
+       <br>
+       <b>want's to:</b> {{ object.want_to }}
+       <br>
+       <b>Address:</b> {{ object.address }}
+       <br>
+    </p>
+    <p style="white-space:pre-wrap"><b>Description:</b> 
+    {{ object.description }}</p>
+    <hr>
+</div>
+
+    <a href="{% url 'blog_edit' blog.pk %}" class="btn btn-primary btn-sm">Edit</a>
+    <a href="{% url 'blog_delete' blog.pk %}" class="btn btn-danger btn-sm">Delete</a>
+    <hr>
+    <p>Hey you can search property by <a href="{% url 'location' %}" class="btn btn-secondary">Location</a></p>
+    <hr>
+    <p>Back to <a href="{% url 'blog_list' %}" class="btn btn-success btn-sm">All Blogs</a></p>
+
+    <!--p><a href="{% url 'blog_edit' blog.pk %}">Edit</a> | 
+    <a href="{% url 'blog_delete' blog.pk %}">Delete</a> </p>
+    <p>Back to <a href="{% url 'blog_list' %}">All Blogs</a>.</p-->
+
+{% endblock content %}
