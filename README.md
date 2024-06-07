@@ -22,3 +22,32 @@ This project is a real estate listing web application developed using Django. In
    5. TomTom Maps: Used to display property locations on an interactive map.
    6. Mailtrap: Email service used to handle inquiry submissions.
    7. HTML/CSS: Front-end design and styling.
+
+
+## Screenshots
+
+### Home page
+
+![image](https://github.com/ShrujanMali/propertyfy/assets/86197841/b3ece71a-287e-4fa2-a772-e60e985839bf)
+
+### Map
+
+![image](https://github.com/ShrujanMali/propertyfy/assets/86197841/630a34f4-c74a-4503-a059-6e1587f5e466)
+
+### Sign up page
+
+![image](https://github.com/ShrujanMali/propertyfy/assets/86197841/164517d8-3b09-46d6-a4e9-24df353597c9)
+
+
+### Contact us page
+
+![image](https://github.com/ShrujanMali/propertyfy/assets/86197841/63d7fbce-c862-45e6-a7c4-5fb2c09863ba)
+
+### Reset password option
+
+![image](https://github.com/ShrujanMali/propertyfy/assets/86197841/cc34bdb4-d213-4aa9-9ee9-ef2de36e0c5c)
+
+### Blog page
+
+![image](https://github.com/ShrujanMali/propertyfy/assets/86197841/058ac8eb-200b-46f8-94ce-0a5281009142)
+
