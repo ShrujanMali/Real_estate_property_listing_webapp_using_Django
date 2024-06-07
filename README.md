@@ -7,7 +7,7 @@ This project is a real estate listing web application developed using Django. In
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,django,github,vscode,git,bootstrap,js,html,css.tomtom" />
+    <img src="https://skillicons.dev/icons?i=python,django,github,vscode,git,bootstrap,js,html,css" />
   </a>
 </p>
 
