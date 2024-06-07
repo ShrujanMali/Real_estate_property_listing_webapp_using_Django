@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a real estate listing web application developed using Django. Initially conceptualized as a blog application, it has been adapted to allow users to sell, rent, or lease properties such as apartments, flats, and bungalows. The application includes user authentication, CRUD operations for property listings, a contact form for inquiries, and an integrated map to display property locations using TomTom geocoder and map services.
+This project is a real estate listing web application developed using Django. Initially conceptualized as a blog application, it has been adapted to allow users to sell, rent, or lease properties such as apartments, flats, and bungalows. The application includes user authentication, CRUD operations for property listings, a contact form for inquiries, and an integrated map to display property locations using TomTom geocoder and map services. And also implemented the serach functionality for seamles peroperty search.
 
 
 ## Features
@@ -11,6 +11,7 @@ This project is a real estate listing web application developed using Django. In
   2. Property Listings: Users can create, view, update, and delete property listings with details such as title, description, address, price, and type (sell, rent, lease).
   3. Contact Us Form: Users can fill out a form with their name, email, subject, and message to send inquiries or feedback. These inquiries are sent to the admin via Mailtrap.
   4. Property Map: The application converts property addresses into latitude and longitude using TomTom geocoder and displays all properties on a map using TomTom map services.
+  5. Serach functionality: User can serach the property by City, Amenities, Property type
 
 ## Technology Stack
 
