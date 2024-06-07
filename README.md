@@ -2,7 +2,14 @@
 
 ## Overview
 
-This project is a real estate listing web application developed using Django. Initially conceptualized as a blog application, it has been adapted to allow users to sell, rent, or lease properties such as apartments, flats, and bungalows. The application includes user authentication, CRUD operations for property listings, a contact form for inquiries, and an integrated map to display property locations using TomTom geocoder and map services. And also implemented the serach functionality for seamles peroperty search.
+This project is a real estate listing web application developed using Django. Initially conceptualized as a blog application, it has been adapted to allow users to sell, rent, or lease properties such as apartments, flats, and bungalows. The application includes user authentication, CRUD operations for property listings, a contact form for inquiries, and an integrated map to display property locations using TomTom geocoder and map services. And also implemented the search functionality for seamles peroperty search.
+
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python,django,github,vscode,git,bootstrap,js,html,css.tomtom" />
+  </a>
+</p>
 
 
 ## Features
