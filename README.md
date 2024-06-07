@@ -11,7 +11,7 @@ This project is a real estate listing web application developed using Django. In
   2. Property Listings: Users can create, view, update, and delete property listings with details such as title, description, address, price, and type (sell, rent, lease).
   3. Contact Us Form: Users can fill out a form with their name, email, subject, and message to send inquiries or feedback. These inquiries are sent to the admin via Mailtrap.
   4. Property Map: The application converts property addresses into latitude and longitude using TomTom geocoder and displays all properties on a map using TomTom map services.
-  5. Serach functionality: User can serach the property by City, Amenities, Property type
+  5. Search functionality: User can serach the property by City, Amenities, Property type
 
 ## Technology Stack
 
